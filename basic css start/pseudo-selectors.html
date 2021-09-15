@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pseudo Class Selector</title>
+<style>
+/* style the list to make them look like buttons */
+header li{
+	list-style: none;
+}
+a:link{
+	text-decoration: none;
+	background-color: orange;
+	border: 1px solid red;
+	color: black;
+	display: block;
+	width: 200px;
+	text-align: center;
+	margin-bottom: 3px;
+
+}
+
+a:visited{
+	text-decoration: none;
+	background-color: red;
+	border: 1px solid orange;
+	color: black;
+	display: block;
+	width: 200px;
+	text-align: center;
+	margin-bottom: 3px;
+}
+
+a:hover, a:active{
+	background-color: green;
+
+}
+
+header li:nth-child(3) {
+	font-size: 21px;
+}
+
+section div:nth-child(odd){
+	background-color: gray;
+}
+
+section div:nth-child(5):hover {
+	background-color: green;
+	cursor: pointer;
+
+}
+</style>
+</head>
+<body>
+<h1>Pseudo Class Selectors</h1>
+
+<header>
+	<ul>
+		<li><a href="https://en.wikipedia.org/wiki/Jalsa">Jalsa Movie Details</a></li>
+		<li><a href="https://en.wikipedia.org/wiki/Rangasthalam" target="_blank">Rangasthalam Movie Details</a></li>
+		<li><a href="https://en.wikipedia.org/wiki/Ala_Vaikunthapurramuloo" target="_blank">Ala Vaikunthapurramuloo Movie Details</a></li>
+	</ul>
+</header>
+
+<section>
+	<div>DIV 1</div>
+	<div>DIV 2</div>
+	<div>DIV 3</div>
+	<div>DIV 4</div>
+	<div>DIV 5</div>
+	<div>DIV 6</div>
+	<div>DIV 7</div>
+	<div>DIV 8</div>
+	<div>DIV 9</div>
+	<div>DIV 10</div>
+</section>
+</body>
+</html>
